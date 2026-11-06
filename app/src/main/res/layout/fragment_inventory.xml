@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light"
+    android:padding="16dp">
+
+    <!-- Top Action & Search Bar Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:strokeColor="@color/card_stroke"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Task 5 Component 1: SearchView -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/sv_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search stock by name, ID or category..."
+                android:background="@drawable/bg_badge_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category:"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="6dp" />
+
+                <!-- Task 5 Component 6: Spinner -->
+                <Spinner
+                    android:id="@+id/spinner_filter_category"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_badge_blue"
+                    android:paddingHorizontal="8dp" />
+
+                <!-- Task 5 Component 4: Functional ImageButton to launch AddProductActivity -->
+                <ImageButton
+                    android:id="@+id/btn_launch_add_activity"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@drawable/bg_badge_blue"
+                    android:contentDescription="Add Product Activity"
+                    android:layout_marginStart="8dp"
+                    app:tint="@color/accent_blue" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Task 2: Data Passing Banner & Action Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Live Inventory Stock List"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+        <!-- Task 2: Fragment-to-Fragment Data Passing Action Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pass_to_production"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Selected to Production ➔"
+            android:textColor="@color/purple_600"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Task 4: RecyclerView with Layout Animation (Task 6 Animation 5) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_inventory_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

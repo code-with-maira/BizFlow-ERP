@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">BizFlow ERP</string>
+    <string name="app_tagline">Offline-First Warehouse &amp; Manufacturing System</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Sign in to manage warehouse operations</string>
+    <string name="email_label">Email Address</string>
+    <string name="email_hint">admin@bizflow.com</string>
+    <string name="password_label">Password</string>
+    <string name="password_hint">••••••••</string>
+    <string name="login_button">Sign In to BizFlow</string>
+    <string name="err_empty_email">Please enter your email address</string>
+    <string name="err_invalid_email">Please enter a valid email address</string>
+    <string name="err_empty_password">Please enter your password</string>
+    <string name="login_success">Login Successful! Welcome to BizFlow ERP.</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_title">BizFlow ERP Dashboard</string>
+    <string name="dashboard_welcome">Welcome, Warehouse Manager</string>
+    <string name="total_inventory">Total Inventory</string>
+    <string name="total_inventory_val">1,480 Units</string>
+    <string name="total_inventory_sub">12 Categories in stock</string>
+    <string name="total_sales">Total Sales (MTD)</string>
+    <string name="total_sales_val">$48,250.00</string>
+    <string name="total_sales_sub">+14.2% vs last month</string>
+    <string name="production_overview">Production Overview</string>
+    <string name="production_val">350 Units Today</string>
+    <string name="production_sub">3 Active Batches running</string>
+    <string name="low_stock_alerts">Low Stock Alerts</string>
+    <string name="low_stock_msg">2 items below minimum threshold: Steel Bearings, Industrial Bolts.</string>
+    <string name="nav_inventory">Manage Inventory</string>
+    <string name="nav_production">Manage Production</string>
+    <string name="quick_actions">Quick Actions</string>
+
+    <!-- Inventory Screen -->
+    <string name="inventory_title">Inventory Management</string>
+    <string name="add_new_inventory">Add New Inventory Stock</string>
+    <string name="prod_name_hint">Product Name (e.g. Steel Rod 10mm)</string>
+    <string name="prod_id_hint">Product ID (e.g. PRD-8821)</string>
+    <string name="barcode_hint">Barcode Number (e.g. 890123456789)</string>
+    <string name="quantity_hint">Stock Quantity</string>
+    <string name="add_inventory_btn">Add Inventory Entry</string>
+    <string name="inventory_list_title">Current Inventory Items</string>
+    <string name="err_all_fields_required">Please fill in all fields</string>
+    <string name="msg_inventory_added">Inventory item added successfully!</string>
+
+    <!-- Production Screen -->
+    <string name="production_title">Production Management</string>
+    <string name="add_new_production">Record Production Entry</string>
+    <string name="prod_name">Product Name</string>
+    <string name="prod_name_prod_hint">Manufactured Item Name</string>
+    <string name="prod_qty_hint">Produced Quantity</string>
+    <string name="wastage_qty_hint">Wastage Quantity</string>
+    <string name="prod_date_hint">Production Date (YYYY-MM-DD)</string>
+    <string name="save_production_btn">Save Production Log</string>
+    <string name="production_list_title">Recent Production Logs</string>
+    <string name="msg_production_saved">Production log saved successfully!</string>
+    <string name="back">Back</string>
+</resources>
